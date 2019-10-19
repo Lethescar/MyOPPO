@@ -34,24 +34,31 @@ insert into oppo_nav values(null,'6','三脚架蓝牙自拍杆','/img/head_acces
 insert into oppo_nav values(null,'6','超闪车载充电器','/img/head_accessories4.png','');
 insert into oppo_nav values(null,'6','更多配件','/img/head_more_accessories.png','');
 
-#手机型号
-create table OPPO_phone_family(
-  fid int primary key auto_increment,
-  fname varchar(32)
+#旗舰机
+create table flagship_floor(
+  fid int primary key auto_increment,			#手机编号
+  family_id int,													#所属手机型号
+  phone_name varchar(64),								  #手机名称
+	spec varchar(64),                       #规格参数
+	color varchar(128),											#颜色
+  border_color varchar(128),              #边框颜色
+	price varchar(32),										  #价格
+  btn varchar(32),                        #按钮内容
+  is_new varchar(32),                     #是否为新品
+	images varchar(128)                     #图片
 );
-insert into OPPO_phone_family values(null,'OPPO K3系列');
-insert into OPPO_phone_family values(null,'Reno 10系列');
-insert into OPPO_phone_family values(null,'OPPO Reno系列');
-insert into OPPO_phone_family values(null,'Reno Z系列');
-insert into OPPO_phone_family values(null,'A系列');
-insert into OPPO_phone_family values(null,'A9x系列');
-insert into OPPO_phone_family values(null,'K1系列');
-insert into OPPO_phone_family values(null,'R17系列');
-insert into OPPO_phone_family values(null,'R15x系列');
-insert into OPPO_phone_family values(null,'A5系列');
-insert into OPPO_phone_family values(null,'R17 Pro系列');
-insert into OPPO_phone_family values(null,'Find X系列');
-insert into OPPO_phone_family values(null,'A7系列');
+insert into flagship_floor values(null,'1','OPPO Reno2','8G+128G，视频超级防抖。','background-image: linear-gradient(to right bottom, rgb(67, 124, 247), rgb(1, 20, 63))','border-color: rgb(20, 63, 155)','¥2999','立即购买','新品','/img/suppro1_1.jpg');
+insert into flagship_floor values(null,'1','OPPO Reno2','8G+128G，视频超级防抖。','background-image: linear-gradient(to right bottom, rgb(127, 181, 219), rgb(44, 71, 128))','border-color: rgb(94, 137, 187)','¥2999','立即购买','新品','/img/suppro1_2.jpg');
+insert into flagship_floor values(null,'1','OPPO Reno2','8G+128G，视频超级防抖。','background-image: linear-gradient(to right bottom, rgb(250, 219, 208), rgb(233, 179, 160))','border-color: rgb(235, 183, 181)','¥2999','立即购买','新品','/img/suppro1_3.jpg');
+insert into flagship_floor values(null,'2','OPPO  K3','6G+64G，VOOC 3.0。','background-image: linear-gradient(to right bottom, rgb(41, 59, 158), rgb(65, 4, 55))','border-color: rgb(41, 59, 158)','¥1499','立即购买','新品','/img/suppro2_1.jpg');
+insert into flagship_floor values(null,'2','OPPO  K3','8G+128G，全面屏。','background-image: linear-gradient(to right bottom, rgb(2, 85, 96), rgb(5, 10, 13))','border-color: rgb(2, 85, 96)','¥1799','立即购买','新品','/img/suppro2_2.jpg');
+insert into flagship_floor values(null,'2','OPPO  K3','8G+256G，骁龙 710。','background-image: linear-gradient(to right bottom, rgb(238, 245, 255), rgb(245, 228, 212))','border-color: rgb(238, 245, 255) rgb(245, 228, 212)','¥2299','立即购买','新品','/img/suppro2_3.jpg');
+insert into flagship_floor values(null,'2','OPPO  K3','8G+256G，骁龙 710。','background-image: linear-gradient(to right bottom, rgb(2, 189, 179), rgb(3, 55, 87))','border-color: rgb(2, 189, 179)','¥1799','立即购买','新品','/img/suppro2_4.jpg');
+insert into flagship_floor values(null,'3','Reno 10 倍变焦版','8G+256G，全景屏。','background-image: linear-gradient(to right bottom, rgb(86, 195, 210), rgb(39, 104, 122))','border-color: rgb(0, 155, 147)','¥4299','立即购买','6期免息','/img/suppro3_1.jpg');
+insert into flagship_floor values(null,'3','Reno 巴萨定制版','8G+256G，全景屏。','background-image: linear-gradient(to right bottom, rgb(20, 32, 220), rgb(175, 40, 36))','border-color: rgb(45, 56, 184)','¥4299','立即购买','新品','/img/suppro3_2.jpg');
+insert into flagship_floor values(null,'3','Reno 10 倍变焦版','6G+128G，全景屏。','background-image: linear-gradient(to right bottom, rgb(169, 178, 192), rgb(36, 41, 58))','border-color: rgb(43, 48, 57)','¥3699','立即购买','6期免息','/img/suppro3_3.jpg');
+insert into flagship_floor values(null,'3','Reno 10 倍变焦版','6G+256G，全景屏。','background-image: linear-gradient(to right bottom, rgb(86, 195, 210), rgb(39, 104, 122))','border-color: rgb(0, 155, 147)','¥3999','立即购买','6期免息','/img/suppro3_4.jpg');
+
 
 #手机资料
 create table OPPO_phone(
