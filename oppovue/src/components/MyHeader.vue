@@ -173,7 +173,6 @@ export default {
                     url,
                 );
                 this.navlist=result.data.data;
-                console.log(this.navlist);
             })();
         },
         changeicon(){

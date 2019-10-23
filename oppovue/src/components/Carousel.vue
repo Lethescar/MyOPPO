@@ -5,8 +5,8 @@
     <div class="carousel-inner" :class="ulClass" :style="ulStyle">
       <div v-for="(img,i) of imgs" :key="i" class="carousel-item" :style="{width:innerWidth+'px'}">
         <router-link :to="img.link_to">
-          <img :src="img.pic_src" class="bigpic" :style="{width:innerWidth+'px'}"/>
-          <img :src="img.smpic_src" class="smallpic" :style="{width:innerWidth+'px'}"/>
+          <img :src="'http://127.0.0.1:8000'+img.pic_src" class="bigpic" :style="{width:innerWidth+'px'}"/>
+          <img :src="'http://127.0.0.1:8000'+img.smpic_src" class="smallpic" :style="{width:innerWidth+'px'}"/>
         </router-link>
         <div class="pro_box">
           <h2 :to="img.link_to" v-text="img.title" v-bind:style=" (i==5) ? 'color:#000' : 'color:#fff'"></h2>
@@ -58,7 +58,6 @@ export default {
               url,
           );
           this.imgs=result.data.data;
-          console.log(this.imgs);
       })();
     },
     stop(){

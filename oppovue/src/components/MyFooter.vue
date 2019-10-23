@@ -141,6 +141,7 @@ export default {
 </script>
 <style scoped>
 /* 底部导航 */
+footer{    background: #fff;}
 .footer-nav{padding: 60px 0;font-size: 13px;}
 .footer-nav-wrapper{width: 1200px;margin: 0 auto;display: inline-block;}
 /* 左侧 */
