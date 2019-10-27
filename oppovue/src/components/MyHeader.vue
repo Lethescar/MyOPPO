@@ -74,28 +74,44 @@
                         </div>
                     </el-submenu>
                     <el-menu-item index="7">服务</el-menu-item>
-                    <el-menu-item index="8">商城</el-menu-item>
+                    <el-menu-item index="8">
+                        <router-link :to="`/shop`">
+                            商城
+                        </router-link>
+                    </el-menu-item>
                 </el-menu>
             </div>
             <div class="nav-bag">
                 <el-row>
                     <el-col :span="12">
-                        <el-dropdown trigger="click" placement="bottom">
+                        <el-dropdown trigger="click" placement="bottom" @command="u_exit">
                             <span class="el-dropdown-link">
                                 <img src="../../public/img/shopping_bag.png" alt="">
                             </span>
                             <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item>
-                                    <img src="../../public/img/shopping_trolley.png" alt="">
-                                    购物车
+                                    <router-link class="tdn" :to="`/login`">
+                                        <img src="../../public/img/shopping_trolley.png" alt="">
+                                        购物车
+                                    </router-link>
                                 </el-dropdown-item>
                                 <el-dropdown-item>
-                                    <img src="../../public/img/personal_center.png" alt="">
-                                    个人中心
+                                    <router-link class="tdn" :to="`/login`">
+                                        <img src="../../public/img/personal_center.png" alt="">
+                                        个人中心
+                                    </router-link>
                                 </el-dropdown-item>
-                                <el-dropdown-item>
-                                    <img src="../../public/img/register.png" alt="">
-                                    登录
+                                <el-dropdown-item  v-if="islogin==0">
+                                    <router-link class="tdn" :to="`/login`" >
+                                        <img src="../../public/img/register.png" alt="">
+                                        登录
+                                    </router-link>
+                                </el-dropdown-item>
+                                <el-dropdown-item v-else :id="islogin" command="1">
+                                    <a class="tdn" >
+                                        <img src="../../public/img/register.png" alt="">
+                                        退出账户
+                                    </a>
                                 </el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
@@ -103,6 +119,7 @@
                 </el-row>
             </div>
         </div>
+        <!-- 响应式 -->
         <div class="nav-menu-list" v-bind:class="count==0?'menulist':''">
             <el-collapse v-model="activeName" accordion>
                 <el-collapse-item title="Find 系列" name="1">
@@ -160,6 +177,7 @@ export default {
             activeName: '',
             navlist:[],
             count:1,
+            islogin:0,
         }
     },
     methods: {
@@ -185,7 +203,23 @@ export default {
                 return;
             }
         },
+        get_islogin(){
+            var islogin=localStorage.getItem('login');
+            // console.log(islogin)
+            if(islogin){
+                this.islogin=1;
+                // console.log(this.islogin);
+            }
+        },
+        u_exit(command){
+            if (command==1) {
+                this.islogin=0;
+                // console.log(this.islogin);
+                localStorage.removeItem('login');
+            }
+        }
     },
+   
     computed: {
 		nav1: function () {
 			return this.navlist.slice(0, 3)
@@ -209,6 +243,8 @@ export default {
     created() {
         this.get_header_nav();
         this.changeicon();
+        this.get_islogin();
+        // this.u_exit();
     },
 }
 </script>
@@ -228,6 +264,7 @@ a{color:#333;text-decoration: none;transition: opacity 0.3s ease,color 0.35s eas
 .el-menu--horizontal{left: 0 !important;width: 100%;top: 0 !important;z-index: 5 !important;}
 .header-container .el-menu-item:hover {background-color: transparent !important;}
 .header-container .el-submenu__title{transition: none;}
+.header-container .el-menu--horizontal>.el-menu-item{border-bottom: none;}
 .header-container .el-menu--horizontal>.el-submenu .el-submenu__title{color: #333;}
 .header-container .el-menu--horizontal>.el-menu-item{color: #333;}
 .header-container .el-menu--horizontal>.el-submenu .el-submenu__title:hover{color: #909399;}
@@ -365,4 +402,9 @@ a{color:#333;text-decoration: none;transition: opacity 0.3s ease,color 0.35s eas
     .menu-list-item h3:hover{opacity: .8;}
     .menu-list-item p:hover{opacity: .6;}
 }
+
+    .tdn:hover {
+        color: #303133;
+        text-decoration: none !important;
+    }
 </style>

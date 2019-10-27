@@ -3,7 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const index=require("./routes/index");
 const shop=require("./routes/shop");
-const products=require("./routes/products");
+const user=require("./routes/user");
+const product=require("./routes/product");
 const session = require("express-session");
 const cors=require("cors");
 /*引入路由模块*/
@@ -12,7 +13,7 @@ const cors=require("cors");
 var server = express();
 server.listen(8000);
 server.use(cors({
-  origin:["http://127.0.0.1:8080","http://localhost:8080","http://172.18.88.47:8080"],
+  origin:["http://127.0.0.1:8080","http://localhost:8080","http://localhost:8000"],
   credentials:true
 }));//从此所有响应，自动带Access-Control-Allow-Origin:http://127.0.0.1:5500
 //万一客户端浏览器地址发生变化，只改这里origin一处即可！
@@ -31,6 +32,7 @@ server.use(express.static('public'));
 /*使用路由器来管理路由*/
 server.use("/index",index);
 server.use("/shop",shop);
-server.use("/products",products);
+server.use("/user",user);
+server.use("/product",product);
 
 

@@ -4,23 +4,23 @@
       <!--1.轮播图片-->
     <div class="carousel-inner" :class="ulClass" :style="ulStyle">
       <div v-for="(img,i) of imgs" :key="i" class="carousel-item" :style="{width:innerWidth+'px'}">
-        <router-link :to="img.link_to">
+        <router-link :to="`/product`" @click="prohibitOpen()">
           <img :src="'http://127.0.0.1:8000'+img.pic_src" class="bigpic" :style="{width:innerWidth+'px'}"/>
           <img :src="'http://127.0.0.1:8000'+img.smpic_src" class="smallpic" :style="{width:innerWidth+'px'}"/>
         </router-link>
         <div class="pro_box">
-          <h2 :to="img.link_to" v-text="img.title" v-bind:style=" (i==5) ? 'color:#000' : 'color:#fff'"></h2>
-          <h3 :to="img.link_to" v-text="img.smalltitle" v-bind:style=" (i==5) ? 'color:#666' : 'color:#fff'"></h3>
+          <h2 :to="`/product`" v-text="img.title" v-bind:style=" (i==5) ? 'color:#000' : 'color:#fff'"></h2>
+          <h3 :to="`/product`" v-text="img.smalltitle" v-bind:style=" (i==5) ? 'color:#666' : 'color:#fff'"></h3>
           <div class="buy_btn" :class="(i==5)?'green_btn':''">
             <a href="javascript:;" v-text="img.btn" ></a>
           </div>
         </div>
       </div>
-      <div class="carousel-item" :style="{width:innerWidth+'px'}">
-        <router-link :to="imgs[0].link_to">
-          <img :src="imgs[0].pic_src" :style="{width:innerWidth+'px'}"/>
+      <!-- <div class="carousel-item" :style="{width:innerWidth+'px'}">
+        <router-link :to="`/product`">
+          <img :src="img.pic_src" :style="{width:innerWidth+'px'}"/>
         </router-link>
-      </div>
+      </div> -->
     </div>
     <!--3.轮播指示符-->
     <ul class="carousel-indicators">
@@ -59,6 +59,7 @@ export default {
           );
           this.imgs=result.data.data;
       })();
+
     },
     stop(){
       clearInterval(this.timer);

@@ -100,196 +100,67 @@ insert into main_floor values(null,'8','A11','4G+128G丨5000mAh','background-ima
 insert into main_floor values(null,'8','A11','4G+128G丨5000mAh','background-image: linear-gradient(to right bottom, rgb(242, 239, 240), rgb(228, 239, 244))','border-color: rgb(242, 239, 240) rgb(228, 239, 244)','¥1499','0','/img/main_floor8_2.jpg');
 
 
-#手机图片
+#购买页手机图片
 create TABLE OPPO_phone_pic(
   pid INT PRIMARY KEY AUTO_INCREMENT,				   #图片编号
-  phone_id INT,															   #手机编号
+  phone_name varchar(64),															   #手机名称
   buy_lg VARCHAR(128),                         #购买界面大图路径
   buy_sm VARCHAR(128)                          #购买界面小图路径
 );
-insert into OPPO_phone_pic values(1,1,'images/lgk31.jpg','images/smk311.jpg');
-insert into OPPO_phone_pic values(2,1,'images/lgk31.jpg','images/smk312.jpg');
-insert into OPPO_phone_pic values(3,1,'images/lgk31.jpg','images/smk313.jpg');
-insert into OPPO_phone_pic values(4,1,'images/lgk31.jpg','images/smk314.jpg');
-insert into OPPO_phone_pic values(5,1,'images/lgk32.jpg','images/smk321.jpg');
-insert into OPPO_phone_pic values(6,1,'images/lgk32.jpg','images/smk322.jpg');
-insert into OPPO_phone_pic values(7,1,'images/lgk32.jpg','images/smk323.jpg');
-insert into OPPO_phone_pic values(8,1,'images/lgk32.jpg','images/smk324.jpg');
-insert into OPPO_phone_pic values(9,1,'images/lgk33.jpg','images/smk331.jpg');
-insert into OPPO_phone_pic values(10,1,'images/lgk33.jpg','images/smk331.jpg');
-insert into OPPO_phone_pic values(11,1,'images/lgk33.jpg','images/smk331.jpg');
-insert into OPPO_phone_pic values(12,1,'images/lgk33.jpg','images/smk331.jpg');
-insert into OPPO_phone_pic values(13,2,'images/lgReno 101.jpg','images/smReno 1011.jpg');
-insert into OPPO_phone_pic values(14,2,'images/lgReno 101.jpg','images/smReno 1012.jpg');
-insert into OPPO_phone_pic values(15,2,'images/lgReno 101.jpg','images/smReno 1013.jpg');
-insert into OPPO_phone_pic values(16,2,'images/lgReno 101.jpg','images/smReno 1014.jpg');
-insert into OPPO_phone_pic values(17,2,'images/lgReno 102.jpg','images/smReno 1021.jpg');
-insert into OPPO_phone_pic values(18,2,'images/lgReno 102.jpg','images/smReno 1022.jpg');
-insert into OPPO_phone_pic values(19,2,'images/lgReno 102.jpg','images/smReno 1023.jpg');
-insert into OPPO_phone_pic values(20,2,'images/lgReno 102.jpg','images/smReno 1024.jpg');
-insert into OPPO_phone_pic values(21,2,'images/lgReno 103.jpg','images/smReno 1031.jpg');
-insert into OPPO_phone_pic values(22,2,'images/lgReno 103.jpg','images/smReno 1032.jpg');
-insert into OPPO_phone_pic values(23,2,'images/lgReno 103.jpg','images/smReno 1033.jpg');
-insert into OPPO_phone_pic values(24,2,'images/lgReno 103.jpg','images/smReno 1034.jpg');
-insert into OPPO_phone_pic values(25,3,'images/lgOPPO Reno1.jpg','images/smOPPO Reno11.jpg');
-insert into OPPO_phone_pic values(26,3,'images/lgOPPO Reno1.jpg','images/smOPPO Reno12.jpg');
-insert into OPPO_phone_pic values(27,3,'images/lgOPPO Reno1.jpg','images/smOPPO Reno13.jpg');
-insert into OPPO_phone_pic values(28,3,'images/lgOPPO Reno1.jpg','images/smOPPO Reno14.jpg');
-insert into OPPO_phone_pic values(29,3,'images/lgOPPO Reno2.jpg','images/smOPPO Reno21.jpg');
-insert into OPPO_phone_pic values(30,3,'images/lgOPPO Reno2.jpg','images/smOPPO Reno22.jpg');
-insert into OPPO_phone_pic values(31,3,'images/lgOPPO Reno2.jpg','images/smOPPO Reno23.jpg');
-insert into OPPO_phone_pic values(32,3,'images/lgOPPO Reno2.jpg','images/smOPPO Reno24.jpg');
-insert into OPPO_phone_pic values(33,3,'images/lgOPPO Reno3.jpg','images/smOPPO Reno31.jpg');
-insert into OPPO_phone_pic values(34,3,'images/lgOPPO Reno3.jpg','images/smOPPO Reno32.jpg');
-insert into OPPO_phone_pic values(35,3,'images/lgOPPO Reno3.jpg','images/smOPPO Reno33.jpg');
-insert into OPPO_phone_pic values(36,3,'images/lgOPPO Reno3.jpg','images/smOPPO Reno34.jpg');
-insert into OPPO_phone_pic values(37,3,'images/lgOPPO Reno4.jpg','images/smOPPO Reno41.jpg');
-insert into OPPO_phone_pic values(38,3,'images/lgOPPO Reno4.jpg','images/smOPPO Reno42.jpg');
-insert into OPPO_phone_pic values(39,3,'images/lgOPPO Reno4.jpg','images/smOPPO Reno43.jpg');
-insert into OPPO_phone_pic values(40,3,'images/lgOPPO Reno4.jpg','images/smOPPO Reno44.jpg');
-insert into OPPO_phone_pic values(41,3,'images/lgOPPO Reno5.jpg','images/smOPPO Reno51.jpg');
-insert into OPPO_phone_pic values(42,3,'images/lgOPPO Reno5.jpg','images/smOPPO Reno52.jpg');
-insert into OPPO_phone_pic values(43,3,'images/lgOPPO Reno5.jpg','images/smOPPO Reno53.jpg');
-insert into OPPO_phone_pic values(44,3,'images/lgOPPO Reno5.jpg','images/smOPPO Reno54.jpg');
-insert into OPPO_phone_pic values(45,4,'images/lgReno Z1.jpg','images/smReno Z11.jpg');
-insert into OPPO_phone_pic values(46,4,'images/lgReno Z1.jpg','images/smReno Z12.jpg');
-insert into OPPO_phone_pic values(47,4,'images/lgReno Z1.jpg','images/smReno Z13.jpg');
-insert into OPPO_phone_pic values(48,4,'images/lgReno Z1.jpg','images/smReno Z14.jpg');
-insert into OPPO_phone_pic values(49,4,'images/lgReno Z2.jpg','images/smReno Z21.jpg');
-insert into OPPO_phone_pic values(50,4,'images/lgReno Z2.jpg','images/smReno Z22.jpg');
-insert into OPPO_phone_pic values(51,4,'images/lgReno Z2.jpg','images/smReno Z23.jpg');
-insert into OPPO_phone_pic values(52,4,'images/lgReno Z2.jpg','images/smReno Z24.jpg');
-insert into OPPO_phone_pic values(53,4,'images/lgReno Z3.jpg','images/smReno Z31.jpg');
-insert into OPPO_phone_pic values(54,4,'images/lgReno Z3.jpg','images/smReno Z32.jpg');
-insert into OPPO_phone_pic values(55,4,'images/lgReno Z3.jpg','images/smReno Z33.jpg');
-insert into OPPO_phone_pic values(56,4,'images/lgReno Z3.jpg','images/smReno Z34.jpg');
-insert into OPPO_phone_pic values(57,4,'images/lgReno Z4.jpg','images/smReno Z41.jpg');
-insert into OPPO_phone_pic values(58,4,'images/lgReno Z4.jpg','images/smReno Z42.jpg');
-insert into OPPO_phone_pic values(59,4,'images/lgReno Z4.jpg','images/smReno Z43.jpg');
-insert into OPPO_phone_pic values(60,4,'images/lgReno Z4.jpg','images/smReno Z44.jpg');
-insert into OPPO_phone_pic values(61,5,'images/lgA91.jpg','images/smA911.jpg');
-insert into OPPO_phone_pic values(62,5,'images/lgA91.jpg','images/smA912.jpg');
-insert into OPPO_phone_pic values(63,5,'images/lgA91.jpg','images/smA913.jpg');
-insert into OPPO_phone_pic values(64,5,'images/lgA91.jpg','images/smA914.jpg');
-insert into OPPO_phone_pic values(65,5,'images/lgA92.jpg','images/smA921.jpg');
-insert into OPPO_phone_pic values(66,5,'images/lgA92.jpg','images/smA922.jpg');
-insert into OPPO_phone_pic values(67,5,'images/lgA92.jpg','images/smA923.jpg');
-insert into OPPO_phone_pic values(68,5,'images/lgA92.jpg','images/smA924.jpg');
-insert into OPPO_phone_pic values(69,5,'images/lgA93.jpg','images/smA931.jpg');
-insert into OPPO_phone_pic values(70,5,'images/lgA93.jpg','images/smA932.jpg');
-insert into OPPO_phone_pic values(71,5,'images/lgA93.jpg','images/smA933.jpg');
-insert into OPPO_phone_pic values(72,5,'images/lgA93.jpg','images/smA934.jpg');
-insert into OPPO_phone_pic values(73,6,'images/lgA9x1.jpg','images/smA9x11.jpg');
-insert into OPPO_phone_pic values(74,6,'images/lgA9x1.jpg','images/smA9x12.jpg');
-insert into OPPO_phone_pic values(75,6,'images/lgA9x1.jpg','images/smA9x13.jpg');
-insert into OPPO_phone_pic values(76,6,'images/lgA9x1.jpg','images/smA9x14.jpg');
-insert into OPPO_phone_pic values(77,6,'images/lgA9x2.jpg','images/smA9x21.jpg');
-insert into OPPO_phone_pic values(78,6,'images/lgA9x2.jpg','images/smA9x22.jpg');
-insert into OPPO_phone_pic values(79,6,'images/lgA9x2.jpg','images/smA9x23.jpg');
-insert into OPPO_phone_pic values(80,6,'images/lgA9x2.jpg','images/smA9x24.jpg');
-insert into OPPO_phone_pic values(81,7,'images/lgK11.jpg','images/smK111.jpg');
-insert into OPPO_phone_pic values(82,7,'images/lgK11.jpg','images/smK112.jpg');
-insert into OPPO_phone_pic values(83,7,'images/lgK11.jpg','images/smK113.jpg');
-insert into OPPO_phone_pic values(84,7,'images/lgK11.jpg','images/smK114.jpg');
-insert into OPPO_phone_pic values(85,7,'images/lgK12.jpg','images/smK121.jpg');
-insert into OPPO_phone_pic values(86,7,'images/lgK12.jpg','images/smK122.jpg');
-insert into OPPO_phone_pic values(87,7,'images/lgK12.jpg','images/smK123.jpg');
-insert into OPPO_phone_pic values(88,7,'images/lgK12.jpg','images/smK124.jpg');
-insert into OPPO_phone_pic values(89,7,'images/lgK13.jpg','images/smK131.jpg');
-insert into OPPO_phone_pic values(90,7,'images/lgK13.jpg','images/smK132.jpg');
-insert into OPPO_phone_pic values(91,7,'images/lgK13.jpg','images/smK133.jpg');
-insert into OPPO_phone_pic values(92,7,'images/lgK13.jpg','images/smK134.jpg');
-insert into OPPO_phone_pic values(93,7,'images/lgK14.jpg','images/smK141.jpg');
-insert into OPPO_phone_pic values(94,7,'images/lgK14.jpg','images/smK142.jpg');
-insert into OPPO_phone_pic values(95,7,'images/lgK14.jpg','images/smK143.jpg');
-insert into OPPO_phone_pic values(96,7,'images/lgK14.jpg','images/smK144.jpg');
-insert into OPPO_phone_pic values(97,8,'images/lgR171.jpg','images/smR1711.jpg');
-insert into OPPO_phone_pic values(98,8,'images/lgR171.jpg','images/smR1712.jpg');
-insert into OPPO_phone_pic values(99,8,'images/lgR171.jpg','images/smR1713.jpg');
-insert into OPPO_phone_pic values(100,8,'images/lgR171.jpg','images/smR1714.jpg');
-insert into OPPO_phone_pic values(101,8,'images/lgR172.jpg','images/smR1721.jpg');
-insert into OPPO_phone_pic values(102,8,'images/lgR172.jpg','images/smR1722.jpg');
-insert into OPPO_phone_pic values(103,8,'images/lgR172.jpg','images/smR1723.jpg');
-insert into OPPO_phone_pic values(104,8,'images/lgR172.jpg','images/smR1724.jpg');
-insert into OPPO_phone_pic values(105,8,'images/lgR173.jpg','images/smR1731.jpg');
-insert into OPPO_phone_pic values(106,8,'images/lgR173.jpg','images/smR1732.jpg');
-insert into OPPO_phone_pic values(107,8,'images/lgR173.jpg','images/smR1733.jpg');
-insert into OPPO_phone_pic values(108,8,'images/lgR173.jpg','images/smR1734.jpg');
-insert into OPPO_phone_pic values(109,9,'images/lgR15x1.jpg','images/smR15x11.jpg');
-insert into OPPO_phone_pic values(110,9,'images/lgR15x1.jpg','images/smR15x12.jpg');
-insert into OPPO_phone_pic values(111,9,'images/lgR15x1.jpg','images/smR15x13.jpg');
-insert into OPPO_phone_pic values(112,9,'images/lgR15x1.jpg','images/smR15x14.jpg');
-insert into OPPO_phone_pic values(113,9,'images/lgR15x2.jpg','images/smR15x21.jpg');
-insert into OPPO_phone_pic values(114,9,'images/lgR15x2.jpg','images/smR15x22.jpg');
-insert into OPPO_phone_pic values(115,9,'images/lgR15x2.jpg','images/smR15x23.jpg');
-insert into OPPO_phone_pic values(116,9,'images/lgR15x2.jpg','images/smR15x24.jpg');
-insert into OPPO_phone_pic values(117,10,'images/lgA51.jpg','images/smA511.jpg');
-insert into OPPO_phone_pic values(118,10,'images/lgA51.jpg','images/smA512.jpg');
-insert into OPPO_phone_pic values(119,10,'images/lgA51.jpg','images/smA513.jpg');
-insert into OPPO_phone_pic values(120,10,'images/lgA51.jpg','images/smA514.jpg');
-insert into OPPO_phone_pic values(121,10,'images/lgA52.jpg','images/smA521.jpg');
-insert into OPPO_phone_pic values(122,10,'images/lgA52.jpg','images/smA522.jpg');
-insert into OPPO_phone_pic values(123,10,'images/lgA52.jpg','images/smA523.jpg');
-insert into OPPO_phone_pic values(124,10,'images/lgA52.jpg','images/smA524.jpg');
-insert into OPPO_phone_pic values(125,10,'images/lgA53.jpg','images/smA531.jpg');
-insert into OPPO_phone_pic values(126,10,'images/lgA53.jpg','images/smA532.jpg');
-insert into OPPO_phone_pic values(127,10,'images/lgA53.jpg','images/smA533.jpg');
-insert into OPPO_phone_pic values(128,10,'images/lgA53.jpg','images/smA534.jpg');
-insert into OPPO_phone_pic values(129,11,'images/lgR17 Pro1.jpg','images/smR17 Pro11.jpg');
-insert into OPPO_phone_pic values(130,11,'images/lgR17 Pro1.jpg','images/smR17 Pro12.jpg');
-insert into OPPO_phone_pic values(131,11,'images/lgR17 Pro1.jpg','images/smR17 Pro13.jpg');
-insert into OPPO_phone_pic values(132,11,'images/lgR17 Pro1.jpg','images/smR17 Pro14.jpg');
-insert into OPPO_phone_pic values(133,11,'images/lgR17 Pro2.jpg','images/smR17 Pro21.jpg');
-insert into OPPO_phone_pic values(134,11,'images/lgR17 Pro2.jpg','images/smR17 Pro22.jpg');
-insert into OPPO_phone_pic values(135,11,'images/lgR17 Pro2.jpg','images/smR17 Pro23.jpg');
-insert into OPPO_phone_pic values(136,11,'images/lgR17 Pro2.jpg','images/smR17 Pro24.jpg');
-insert into OPPO_phone_pic values(137,11,'images/lgR17 Pro3.jpg','images/smR17 Pro31.jpg');
-insert into OPPO_phone_pic values(138,11,'images/lgR17 Pro3.jpg','images/smR17 Pro32.jpg');
-insert into OPPO_phone_pic values(139,11,'images/lgR17 Pro3.jpg','images/smR17 Pro33.jpg');
-insert into OPPO_phone_pic values(140,11,'images/lgR17 Pro3.jpg','images/smR17 Pro34.jpg');
-insert into OPPO_phone_pic values(141,12,'images/lgFind X1.jpg','images/smFind X11.jpg');
-insert into OPPO_phone_pic values(142,12,'images/lgFind X1.jpg','images/smFind X12.jpg');
-insert into OPPO_phone_pic values(143,12,'images/lgFind X1.jpg','images/smFind X13.jpg');
-insert into OPPO_phone_pic values(144,12,'images/lgFind X1.jpg','images/smFind X14.jpg');
-insert into OPPO_phone_pic values(145,12,'images/lgFind X2.jpg','images/smFind X21.jpg');
-insert into OPPO_phone_pic values(146,12,'images/lgFind X2.jpg','images/smFind X22.jpg');
-insert into OPPO_phone_pic values(147,12,'images/lgFind X2.jpg','images/smFind X23.jpg');
-insert into OPPO_phone_pic values(148,12,'images/lgFind X2.jpg','images/smFind X24.jpg');
-insert into OPPO_phone_pic values(149,12,'images/lgFind X3.jpg','images/smFind X31.jpg');
-insert into OPPO_phone_pic values(150,12,'images/lgFind X3.jpg','images/smFind X32.jpg');
-insert into OPPO_phone_pic values(151,12,'images/lgFind X3.jpg','images/smFind X33.jpg');
-insert into OPPO_phone_pic values(152,12,'images/lgFind X3.jpg','images/smFind X34.jpg');
-insert into OPPO_phone_pic values(153,13,'images/lgA71.jpg','images/smA711.jpg');
-insert into OPPO_phone_pic values(154,13,'images/lgA71.jpg','images/smA712.jpg');
-insert into OPPO_phone_pic values(155,13,'images/lgA71.jpg','images/smA713.jpg');
-insert into OPPO_phone_pic values(156,13,'images/lgA71.jpg','images/smA714.jpg');
-insert into OPPO_phone_pic values(157,13,'images/lgA72.jpg','images/smA721.jpg');
-insert into OPPO_phone_pic values(158,13,'images/lgA72.jpg','images/smA722.jpg');
-insert into OPPO_phone_pic values(159,13,'images/lgA72.jpg','images/smA723.jpg');
-insert into OPPO_phone_pic values(160,13,'images/lgA72.jpg','images/smA724.jpg');
-insert into OPPO_phone_pic values(161,13,'images/lgA73.jpg','images/smA731.jpg');
-insert into OPPO_phone_pic values(162,13,'images/lgA73.jpg','images/smA732.jpg');
-insert into OPPO_phone_pic values(163,13,'images/lgA73.jpg','images/smA733.jpg');
-insert into OPPO_phone_pic values(164,13,'images/lgA73.jpg','images/smA734.jpg');
+insert into OPPO_phone_pic values('null','Reno','/img/pro_reno_bigimg1.png','/img/pro_reno_smallimg1.png');
+insert into OPPO_phone_pic values('null','Reno','/img/pro_reno_bigimg2.png','/img/pro_reno_smallimg2.png');
+insert into OPPO_phone_pic values('null','Reno','/img/pro_reno_bigimg3.png','/img/pro_reno_smallimg3.png');
+insert into OPPO_phone_pic values('null','Reno','/img/pro_reno_bigimg4.png','/img/pro_reno_smallimg4.png');
+
+#手机购买规格
+create TABLE OPPO_phone_spec(
+  sid INT PRIMARY KEY AUTO_INCREMENT,				   #规格编号
+  phone_name varchar(64),															 #手机名称
+  big_title varchar(128),
+  small_title varchar(256),
+  color_title varchar(128),
+  color varchar(128),                           #颜色
+  color_name varchar(32),                       #颜色名称
+  spec varchar(256),                            #规格参数
+  new_price varchar(32),                        #价格
+  old_price varchar(32)
+);
+insert into OPPO_phone_spec values('null','Reno','Reno 6G+128G 珊瑚橙','全景屏，4800万超清像素、支持NFC、VOOC 3.0。','Reno Z热卖中 >>>','background-image: linear-gradient(to right bottom, rgb(243, 131, 76), rgb(240, 87, 47))','珊瑚橙','6G+128G','￥2499.00  ','￥2799');
+insert into OPPO_phone_spec values('null','Reno','Reno 6G+256G 珊瑚橙','全景屏，4800万超清像素、支持NFC、VOOC 3.0。','Reno Z热卖中 >>>','background-image: linear-gradient(to right bottom, rgb(243, 131, 76), rgb(240, 87, 47))','珊瑚橙','6G+256G','￥2799.00  ','￥2999');
+insert into OPPO_phone_spec values('null','Reno','Reno 8G+128G 珊瑚橙','全景屏，4800万超清像素、支持NFC、VOOC 3.0。','Reno Z热卖中 >>>','background-image: linear-gradient(to right bottom, rgb(243, 131, 76), rgb(240, 87, 47))','珊瑚橙','8G+128G','￥2799.00  ','￥2999');
+
+#手机购买赠品
+create TABLE OPPO_phone_complimentary(
+  cid INT PRIMARY KEY AUTO_INCREMENT,				   #赠品编号
+  complimentary varchar(128),															 #赠品名称
+  img varchar(128)
+);
+insert into OPPO_phone_complimentary values(null,'蓝牙音箱 N6','/img/complimentary1.png');
+
 
 #手机购买界面图片
 create table OPPO_spcdetails_pic(
 	did int primary key auto_increment,						#手机购买界面图片编号
-	phone_id INT,															    #手机编号
+	phone_name INT,															    #手机名称
 	detials_pic varchar(128)                      #详情图片
 );
-insert into OPPO_spcdetails_pic values(null,1,'images/K3111.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3112.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3113.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3114.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3115.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3116.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3117.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3118.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K3119.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K31110.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K31111.jpg');
-insert into OPPO_spcdetails_pic values(null,1,'images/K31112.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details1.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details2.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details3.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details4.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details5.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details6.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details7.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details8.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details9.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details10.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details11.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details12.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details13.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details14.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details15.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details16.jpg');
+insert into OPPO_spcdetails_pic values(null,'Reno','img/reno_details17.jpg');
 
 #配件编号
 create table OPPO_fittings(

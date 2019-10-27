@@ -358,7 +358,7 @@ export default {
                 var flagship_img2=[];
                 var flagship_img3=[];
                 for (var key of all_img) {
-                    console.log(key.family_id)
+                    // console.log(key.family_id)
                     if (key.family_id==1) {
                         flagship_img1.push(key);
                     }else if(key.family_id==2){
@@ -389,7 +389,7 @@ export default {
                 var mainfloor_img7=[];
                 var mainfloor_img8=[];
                 for (var key of all_img) {
-                    console.log(key.family_id)
+                    // console.log(key.family_id)
                     if (key.family_id==1) {
                         mainfloor_img1.push(key);
                     }else if(key.family_id==2){
@@ -435,7 +435,7 @@ export default {
                 var supfloor_img7=[];
                 var supfloor_img8=[];
                 for (var key of all_img) {
-                    console.log(key.family_id)
+                    // console.log(key.family_id)
                     if (key.sortid==1) {
                         supfloor_img1.push(key);
                     }else if(key.sortid==2){
@@ -459,7 +459,7 @@ export default {
                 this.supfloor_imgs.push(supfloor_img5);
                 this.supfloor_imgs.push(supfloor_img6);
                 this.supfloor_imgs.push(supfloor_img7);
-                console.log(this.supfloor_imgs);
+                // console.log(this.supfloor_imgs);
             })();
         }
     },
